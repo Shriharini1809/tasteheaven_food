@@ -21,7 +21,9 @@ a{
     --font-header-color:#4d4a45;
 }
 header{
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding-inline: 100px;
     padding-block: 10px;
     background-color: var(--header);
@@ -124,7 +126,8 @@ header{
 
 @media (max-width: 480px){
     header{
-        padding-inline: 15px;
+        
+        padding-block: 0;
 
     }
     .left-logo h3,
@@ -148,7 +151,7 @@ header{
         padding: 10px 0;
     }
     .right-order ul button{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .mid-nav.show{
         display: block;
@@ -290,7 +293,7 @@ header{
     }
     .hero-absolute{
         position: none;
-        top: 850px;
+        top: 895px;
         left: 40px;
         right: 40px;
     }
@@ -402,7 +405,7 @@ body{
 
 @media (max-width: 480px){
     .popular-dish{
-        margin-top: 500px;
+        margin-top: 550px;
         margin-inline: 0;
     }
     .popular-dish .pop{
@@ -531,6 +534,9 @@ body{
 }
 
 @media (max-width: 480px){
+    .recipe-container{
+        margin-top: 30px;
+    }
     .recipes{
         margin-inline: 40px;
     }
@@ -627,7 +633,7 @@ body{
         display: block;
     }
     .blog-container1{
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .blog{
         margin-inline: 40px;
